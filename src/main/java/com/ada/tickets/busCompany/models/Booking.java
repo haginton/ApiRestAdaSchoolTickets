@@ -1,16 +1,16 @@
 package com.ada.tickets.busCompany.models;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "tbl_booking")
-public class Booking {
+public class Booking implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_tbl_booking")
-    @SequenceGenerator(name = "seq_tbl_booking", sequenceName = "seq_tbl_booking")
-    @Column(name = "cod_booking")
+    @SequenceGenerator(schema = "ADA_USER", name = "SEQ_BOOKING", sequenceName  = "SQ_TBL_BOOKING", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_BOOKING")
     private Integer codBooking;
 
     private String name;
