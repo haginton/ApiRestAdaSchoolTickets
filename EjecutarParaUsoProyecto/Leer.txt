@@ -4,3 +4,5 @@ Ejerucar los scripts en el siguiente orden:
 2. Table_and_sequence.sql - se debe conectar a una base de datos Oracle con el usuario ada_user recien creado, esto creara la tabla tbl_booking y la secuencia sq_tbl_booking
 
 Importar el JSON Postman "Ada-School-Harrison.postman_collection.json" para poder probar los metodos del proyecto 
+
+IMPORTANTE! para poder ver la documentación swagger importar e iniciar el proyecto y luego ir a la siguiente url: http://localhost:8090/swagger-ui.html
