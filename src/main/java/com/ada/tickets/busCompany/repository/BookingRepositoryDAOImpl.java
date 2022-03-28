@@ -11,7 +11,7 @@ import java.util.Optional;
 public class BookingRepositoryDAOImpl implements BookingRepositoryDAO{
 
     @Autowired
-    BookingCrudRepository bookingCrudRepository;
+    private BookingCrudRepository bookingCrudRepository;
 
     @Override
     public List<Booking> getAll() {
